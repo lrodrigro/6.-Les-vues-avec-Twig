@@ -1,0 +1,13 @@
+{
+    "name": "pro/php-6-twig",
+    "description": "6. Les vues avec Twig",
+    "authors": [
+        {
+            "name": "Luis",
+            "email": "luis.rr.2@gmail.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "^3.0"
+    }
+}

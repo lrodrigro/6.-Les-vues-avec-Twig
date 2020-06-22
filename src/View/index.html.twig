@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <div class="container">   
+        <br>     
+        {% for row in products|batch(3, 'No item') %}
+            <div class="card-deck">
+                {% for column in row %}
+                    <div class="card" style="width:33%">
+                        <div class="card-body">
+                            <h4 class="card-title">{{ column }}</h4>
+                            <a href="#" class="btn btn-primary">{{ column }}</a>
+                        </div>
+                    </div>
+                    <br>
+                {% endfor %}
+            </div>
+            <br>
+        {% endfor %}
+    </div>
+{% endblock %}
